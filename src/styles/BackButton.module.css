@@ -1,0 +1,23 @@
+.backButton {
+    background-color: #CA3E47;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+  .backButton:hover {
+    background-color: #ad2c35;
+    color: #fff;
+    font-weight: b;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }

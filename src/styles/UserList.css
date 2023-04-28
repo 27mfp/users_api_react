@@ -1,0 +1,149 @@
+
+body {
+  background-color: #525252;
+  font-family: Arial, sans-serif;
+}
+
+.user-list-container {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 200px;
+  padding: 20px;
+  background-color: #414141;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-list-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  color: white;
+}
+
+.user-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.user-list-item {
+  cursor: pointer;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  background-color: #313131;
+  transition: background-color 0.3s;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.user-list-item:hover {
+  background-color: #96232373;
+}
+
+.user-list-item-name {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.user-list-item-email {
+  color: #999999;
+  margin-right: 10px;
+}
+
+.user-list-item-address {
+  color: #777;
+  font-size: 12px;
+  margin-top: 4px;
+  margin-right: 10px;
+}
+
+.user-list-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.user-list-modal-content {
+  background-color: #525252;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 60px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  max-height: 80vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.user-list-modal-close {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #CA3E47;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  align-self: center;
+}
+
+.user-list-modal-close:hover {
+  background-color: #5c1d22;
+}
+
+.user-list-modal-header {
+  background-color: #5c1d22;
+  color: #fff;
+  padding: 20px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.user-list-modal-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+}
+
+.user-list-modal-body {
+  padding: 20px;
+}
+
+.user-list-modal-label {
+  display: block;
+  font-weight: normal;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.user-list-modal-body {
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .user-list-modal-content {
+    padding: 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
